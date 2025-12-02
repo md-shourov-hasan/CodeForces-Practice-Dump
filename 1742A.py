@@ -1,0 +1,13 @@
+TestCases = int(input())
+
+for i in range(TestCases):
+  a,b,c = map(int, input().split())
+
+  if a + b == c:
+    print("YES")
+  elif b + c == a:
+    print("YES")
+  elif a + c == b:
+    print("YES")
+  else:
+    print("NO")
